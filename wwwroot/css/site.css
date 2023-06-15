@@ -13,6 +13,12 @@ html {
   min-height: 100%;
 }
 
+
 body {
+  background-color: aqua;    
+    
   margin-bottom: 60px;
+}
+*{
+    background-color: aqua;
 }

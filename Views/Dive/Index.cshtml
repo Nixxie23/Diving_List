@@ -1,0 +1,24 @@
+﻿<h2>Dives</h2>
+<table class="table">
+    <tr>
+        <th>Dive No.</th>
+        <th>Name</th>
+        <th>C Tuck</th>
+        <th>B Pike</th>
+        <th>A Straight</th>
+        <th>D Free</th>
+    </tr>
+
+    @foreach (var dive in @Model)
+    {
+        <tr>
+            <td><a href=/Dive/ViewDive/@dive.DiveNo>@dive.DiveNo</a></td>
+            <td>@dive.Name</td>
+            <td>@dive.CTuck</td>
+            <td>@dive.BPike</td>
+            <td>@dive.AStraight</td>
+            <td>@dive.DFree</td>
+        </tr>
+    }
+
+</table>

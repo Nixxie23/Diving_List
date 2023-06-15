@@ -1,7 +1,19 @@
+using Diving_List;
+using MySql.Data.MySqlClient;
+using System.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IDbConnection>((s) =>
+{
+    IDbConnection conn = new MySqlConnection(builder.Configuration.GetConnectionString("dives"));
+    conn.Open();
+    return conn;
+});
+
+builder.Services.AddTransient<IDiveRepository, DiveRepository>();
 
 var app = builder.Build();
 

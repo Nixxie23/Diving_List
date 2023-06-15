@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\taylo\repos\Diving List
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/taylo/repos/Diving List/Views/Dive/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/taylo/repos/Diving List/Views/Dive/ViewDive.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2ZVxWaWV3RGl2ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/taylo/repos/Diving List/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
