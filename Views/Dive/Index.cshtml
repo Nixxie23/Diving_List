@@ -1,19 +1,24 @@
 ﻿<h2>Dives</h2>
+
+   <div style="display: block">
+    <a style=" color: black" href="/Dive/InsertDive/">Don't see your dive? Add it here!</a>
+ </div>
+
 <table class="table">
     <tr>
         <th>Dive No.</th>
         <th>Name</th>
-        <th>C Tuck</th>
-        <th>B Pike</th>
-        <th>A Straight</th>
-        <th>D Free</th>
+        <th>Tuck (C)</th>
+        <th>Pike (B)</th>
+        <th>Straight (A)</th>
+        <th>Free (D)</th>
     </tr>
 
     @foreach (var dive in @Model)
     {
         <tr>
-            <td><a href=/Dive/ViewDive/@dive.DiveNo>@dive.DiveNo</a></td>
-            <td>@dive.Name</td>
+            <td><a style="color: black" href=/Dive/ViewDive/@dive.DiveNo>@dive.DiveNo</a></td>
+            <td><a style="color: black" href=/Dive/ViewDive/@dive.DiveNo>@dive.Name</a></td>            
             <td>@dive.CTuck</td>
             <td>@dive.BPike</td>
             <td>@dive.AStraight</td>

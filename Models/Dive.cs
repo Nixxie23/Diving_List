@@ -1,4 +1,6 @@
-﻿namespace Diving_List.Models
+﻿using System.Runtime.CompilerServices;
+
+namespace Diving_List.Models
 {
     public class Dive
     {
@@ -9,5 +11,6 @@
         public string BPike { get; set; }
         public string AStraight { get; set; }
         public string DFree { get; set; }
+        public string Notes { get; set; }
     }
 }

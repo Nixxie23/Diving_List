@@ -1,0 +1,28 @@
+﻿@model Dive
+
+<h2>Don't see your dive? Add it here!'</h2>
+
+@using (Html.BeginForm("InsertDiveToDatabase", "Dive", "Post"))
+{
+         <label asp-for="DiveNo" class="control-label">Dive Number</label>
+        <input type="number" name="DiveNo" class="form-control" value="" />
+
+        <label asp-for="Name" class="control-label">Name</label>
+        <input type="text" name="Name" class="form-control" value="" />
+
+        <label asp-for="CTuck" class="control-label">Dive Difficulty for Tuck (C)</label>
+        <input type="number" step="0.01" name="CTuck" class="form-control" />
+  
+        <label asp-for="BPike" class="control-label">Dive Difficulty for Pike (B)</label>
+    <input type="number" step="0.01" name="BPike" class="form-control" />
+
+    <label asp-for="AStraight" class="control-label">Dive Difficulty for Straight (A)</label>
+    <input type="number" step="0.01" name="AStraight" class="form-control" />
+
+    <label asp-for="DFree" class="control-label">Dive Difficulty for Free (D)</label>
+    <input type="number" step="0.01" name="DFree" class="form-control" />
+
+    
+
+        <input type="submit" value="Create Dive" class="btn btn-primary" />
+}

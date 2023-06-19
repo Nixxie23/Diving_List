@@ -1,0 +1,15 @@
+﻿@model Dive
+
+<h2>Update @Model.Name</h2>
+
+@using (Html.BeginForm("UpdateNotesToDatabase", "Dive", "Post"))
+{
+    <input asp-for="DiveNo" type="hidden" value="@Model.DiveNo" />
+
+    <label asp-for="Notes" class="control-label">Notes</label>
+    <input type="text" name="Notes" class="form-control" value="@Model.Notes" />
+
+ 
+
+    <input type="submit" value="Update Notes" class="btn btn-primary" />
+}

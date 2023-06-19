@@ -4,10 +4,11 @@
     <tr>
         <th>Dive No.</th>
         <th>Name</th>
-        <th>C Tuck</th>
-        <th>B Pike</th>
-        <th>A Straight</th>
-        <th>D Free</th>
+        <th> Tuck (C)</th>
+        <th>Pike (B)</th>
+        <th>Straight (A)</th>
+        <th>Free (D)</th>
+        <th>Notes</th>
     </tr>
             <tr>
             <td>@Model.DiveNo</td>
@@ -16,7 +17,10 @@
             <td>@Model.BPike</td>
             <td>@Model.AStraight</td>
             <td>@Model.DFree</td>
+            <td>@Model.Notes</td>
         </tr>
     
-
 </table>
+<div style="display: block">
+    <a href="/Dive/UpdateNotes/@Model.DiveNo">Update this dive's notes!</a>
+</div>
