@@ -9,6 +9,7 @@ namespace Diving_List
         public Dive GetDive(int id);
         public void UpdateNotes(Dive dive);
         public void InsertDive(Dive newDive);
-        
+        public void DeleteDive(Dive dive);
+        public void UpdateDiveDifficulty(Dive dive);
     }
 }

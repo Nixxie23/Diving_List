@@ -1,6 +1,6 @@
 ﻿@model Dive
 
-<h2>Don't see your dive? Add it here!'</h2>
+<h2>Don't see your dive? Add it here!</h2>
 
 @using (Html.BeginForm("InsertDiveToDatabase", "Dive", "Post"))
 {
@@ -22,7 +22,7 @@
     <label asp-for="DFree" class="control-label">Dive Difficulty for Free (D)</label>
     <input type="number" step="0.01" name="DFree" class="form-control" />
 
-    
+    <p></p>
 
-        <input type="submit" value="Create Dive" class="btn btn-primary" />
+        <input type="submit" value="Create Dive" class="button" />
 }

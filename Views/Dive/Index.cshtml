@@ -1,8 +1,13 @@
-﻿<h2>Dives</h2>
+﻿<h1>Looking for more information?</h1>
+<p>
+    Check out the <a class="button" href="https://www.nfhs.org/activities-sports/swimming-diving/">Diving Officials Guidelines Manual</a>
+    for more informatin on the sport of diving. This manual contains silhouettes of commmon dives, what judges are looking for, and why dives are rated the way they are! A list of one meter dives can be found below.
+    Some dives have video recordings showing what they should look like. Look for underlined dive difficulties to find them!
+</p>
 
-   <div style="display: block">
-    <a style=" color: black" href="/Dive/InsertDive/">Don't see your dive? Add it here!</a>
- </div>
+<h2>Dives</h2>
+
+  
 
 <table class="table">
     <tr>
@@ -18,12 +23,16 @@
     {
         <tr>
             <td><a style="color: black" href=/Dive/ViewDive/@dive.DiveNo>@dive.DiveNo</a></td>
-            <td><a style="color: black" href=/Dive/ViewDive/@dive.DiveNo>@dive.Name</a></td>            
-            <td>@dive.CTuck</td>
-            <td>@dive.BPike</td>
-            <td>@dive.AStraight</td>
-            <td>@dive.DFree</td>
+            <td><a style="color: black" href=/Dive/ViewDive/@dive.DiveNo>@dive.Name</a></td>
+            <td><a style="color: black"href="@dive.CLink">@dive.CTuck</a></td>
+            <td><a style="color: black" href="@dive.BLink">@dive.BPike</a></td>
+            <td><a style="color: black" href="@dive.ALink">@dive.AStraight</a></td>
+            <td><a style="color: black"  href="@dive.DLink">@dive.DFree</a></td>
         </tr>
     }
+ 
 
 </table>
+   <div>
+        <a class="button" href="/Dive/InsertDive/">Don't see your dive? Add it here!</a>
+    </div>

@@ -58,5 +58,25 @@ namespace Diving_List.Controllers
                 }
            
         }
+        public IActionResult DeleteDive(Dive dive)
+        {
+            repo.DeleteDive(dive);
+            return RedirectToAction("Index");
+        }
+        public IActionResult UpdateDiveDifficulty(int id)
+        {
+            Dive dive = repo.GetDive(id);
+            if (dive == null)
+            {
+                return View("DiveNotFound");
+            }
+            return View(dive);
+        }
+        public IActionResult UpdateDiveDifficultyToDatabase(Dive dive)
+        {
+            repo.UpdateDiveDifficulty(dive);
+
+            return RedirectToAction("ViewDive", new { id = dive.DiveNo });
+        }
     }
 }

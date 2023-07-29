@@ -34,8 +34,15 @@ namespace Diving_List
            
         }
 
-        
-        
+        void IDiveRepository.DeleteDive(Dive dive)
+        {
+            _conn.Execute("DELETE FROM ONEMETER WHERE DiveNo = @id;", new { id = dive.DiveNo});
+        }
 
+        void IDiveRepository.UpdateDiveDifficulty(Dive dive)
+        {
+            _conn.Execute("UPDATE onemeter SET CTuck = @ctuc;, BPike = @bpike, AStraight = @astraight, DFree = dfree WHERE DiveNo = @id",
+            new { ctuck = dive.CTuck, bpike = dive.BPike, astraight = dive.AStraight, dfree = dive.DFree, id = dive.DiveNo }); 
+        }
     }
 }

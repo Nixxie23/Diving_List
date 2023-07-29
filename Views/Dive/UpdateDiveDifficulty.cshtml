@@ -1,0 +1,26 @@
+﻿@model Dive
+
+<h2>Update @Model.Name</h2>
+
+@using (Html.BeginForm("UpdateDiveDifficultyToDatabase", "Dive", "Post"))
+{
+    <input asp-for="DiveNo" type="hidden" value="@Model.DiveNo" />
+
+   
+            <label asp-for="CTuck" class="control-label">Dive Difficulty for Tuck (C)</label>
+        <input type="number" step="0.01" name="CTuck" class="form-control" value="@Model.CTuck" />
+  
+        <label asp-for="BPike" class="control-label">Dive Difficulty for Pike (B)</label>
+    <input type="number" step="0.01" name="BPike" class="form-control" value="@Model.BPike" />
+
+    <label asp-for="AStraight" class="control-label">Dive Difficulty for Straight (A)</label>
+    <input type="number" step="0.01" name="AStraight" class="form-control" @Model.AStraight'' />
+
+    <label asp-for="DFree" class="control-label">Dive Difficulty for Free (D)</label>
+    <input type="number" step="0.01" name="DFree" class="form-control" @Model.DFree />
+
+
+
+
+    <input type="submit" onclick="return confirm('Save changes?')" value="Update Dive Difficulty" class="button" />
+}
