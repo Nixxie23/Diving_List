@@ -44,19 +44,19 @@ namespace Diving_List.Controllers
         }
         public IActionResult InsertDiveToDatabase(Dive newDive)
         {
-       
-                try
-                {
-                    repo.InsertDive(newDive);
-                    return RedirectToAction("Index");
-                    
 
-                }
-                catch (MySql.Data.MySqlClient.MySqlException ex)
-                {
-            return View("DivesInUse");
-                }
-           
+            try
+            {
+                repo.InsertDive(newDive);
+                return RedirectToAction("Index");
+
+
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                return View("DivesInUse");
+            }
+
         }
         public IActionResult DeleteDive(Dive dive)
         {
